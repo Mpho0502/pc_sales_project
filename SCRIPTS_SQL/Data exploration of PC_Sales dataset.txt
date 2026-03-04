@@ -1,0 +1,7 @@
+This dataset consists exclusively of portable computers (laptops); no desktop devices are included. It captures laptop sales data across 20 countries/states; Illinois, Pennsylvania, Ohio, Angola, Egypt, New York, Nigeria, Ethiopia, California, Kenya, Florida, Botswana, Michigan, North Carolina, Morocco, Georgia, Texas, Ghana, Tanzania, South Africa, spanning two continents: North America and Africa.
+
+The dataset includes 10 laptop brands: HP, Acer, Apple, Dell, Lenovo, Toshiba, Microsoft, Samsung, MSI, and Asus. It contains information on various laptop makes and models sold in different regions.
+
+During the data upload process, several column names were automatically modified due to invalid characters and duplicate naming issues. These can be corrected or standardized using the “Modify Column” feature.
+
+Some fields contain mixed data types (strings and integers), which may require casting or conversion (e.g., to INT or VARCHAR) for proper querying and analysis. Additionally, certain rows contain NULL values that will need to be handled appropriately during data cleaning.
