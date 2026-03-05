@@ -5,3 +5,6 @@ The dataset includes 10 laptop brands: HP, Acer, Apple, Dell, Lenovo, Toshiba, M
 During the data upload process, several column names were automatically modified due to invalid characters and duplicate naming issues. These can be corrected or standardized using the “Modify Column” feature.
 
 Some fields contain mixed data types (strings and integers), which may require casting or conversion (e.g., to INT or VARCHAR) for proper querying and analysis. Additionally, certain rows contain NULL values that will need to be handled appropriately during data cleaning.
+
+[Finance_Amount] [nvarchar](50) NOT NULL,
+[Cost_of_Repairs] [nvarchar](50) NOT NULL,
