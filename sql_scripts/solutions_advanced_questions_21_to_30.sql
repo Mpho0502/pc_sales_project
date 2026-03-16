@@ -86,6 +86,7 @@ FROM [PC_SALES].[dbo].[pc_data]
 WHERE Purchase_Date IS NOT NULL
     AND Ship_Date IS NOT NULL;
 
+
 -- 27. Determine which Sales Person Department generates the highest revenue.
 
 SELECT Sales_Person_Department,
@@ -106,8 +107,11 @@ ORDER BY Total_revenue DESC;
 
 SELECT Sale_Price,
        PC_Market_Price
-       MIN(
 FROM [PC_SALES].[dbo].[pc_data]
 WHERE Sale_Price < PC_Market_Price;
 
 -- 30. Rank Sales Person Name by Total Sales per Employee using a window function.
+
+SELECT Sales_Person_Name, Total_Sales_per_Employee,
+    RANK () OVER ( Order by Total_Sales_Per_Employee Desc) Sales_Ranl
+FROM [PC_SALES].[dbo].[pc_data]
