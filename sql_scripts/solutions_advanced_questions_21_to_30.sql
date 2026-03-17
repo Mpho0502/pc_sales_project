@@ -86,6 +86,12 @@ FROM [PC_SALES].[dbo].[pc_data]
 WHERE Purchase_Date IS NOT NULL
     AND Ship_Date IS NOT NULL;
 
+SELECT AVG(DATEDIFF(DAY, 
+    Try_Cast(Purchase_Date AS datetime), 
+    Try_Cast(Ship_Date AS datetime))) AS Days_between_PD_SD
+FROM [PC_SALES].[dbo].[pc_data]
+WHERE Purchase_Date is not Null and Ship_Date is not Null
+
 
 -- 27. Determine which Sales Person Department generates the highest revenue.
 
@@ -113,5 +119,5 @@ WHERE Sale_Price < PC_Market_Price;
 -- 30. Rank Sales Person Name by Total Sales per Employee using a window function.
 
 SELECT Sales_Person_Name, Total_Sales_per_Employee,
-    RANK () OVER ( Order by Total_Sales_Per_Employee Desc) Sales_Ranl
+    RANK () OVER ( Order by Total_Sales_Per_Employee Desc) Sales_Rank
 FROM [PC_SALES].[dbo].[pc_data]
