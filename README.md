@@ -18,7 +18,6 @@ This project showcases the ability to **translate business questions into action
 - **SQL Server / T-SQL** → Core querying and optimization  
 - **Data Modeling** → Structured schema for sales datasets  
 - **Business Intelligence Concepts** → Translating business questions into queries  
-- **Excel / Power BI (optional)** → Visualizing query outputs  
 
 ---
 
